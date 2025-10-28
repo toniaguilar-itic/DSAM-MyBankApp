@@ -254,7 +254,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="1"
+                    tools:text="1"
                     android:textColor="@color/secondary"
                     android:textSize="20dp" />
 
@@ -281,7 +281,7 @@
                     android:id="@+id/tvPos2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
+                    tools:text="2"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -308,7 +308,7 @@
                     android:id="@+id/tvPos3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3"
+                    tools:text="3"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -335,7 +335,7 @@
                     android:id="@+id/tvPos4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4"
+                    tools:text="4"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -362,7 +362,7 @@
                     android:id="@+id/tvPos5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="5"
+                    tools:text="5"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -389,7 +389,7 @@
                     android:id="@+id/tvPos6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="6"
+                    tools:text="6"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -416,7 +416,7 @@
                     android:id="@+id/tvPos7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="7"
+                    tools:text="7"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -443,7 +443,7 @@
                     android:id="@+id/tvPos8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="8"
+                    tools:text="8"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -470,7 +470,7 @@
                     android:id="@+id/tvPos9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="9"
+                    tools:text="9"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -497,7 +497,7 @@
                     android:id="@+id/tvPos0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="0"
+                    tools:text="0"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
                     android:textSize="20dp"/>
@@ -513,9 +513,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/clBotons"
-        android:gravity="center_vertical"
-
-        >
+        android:gravity="center_vertical" >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
