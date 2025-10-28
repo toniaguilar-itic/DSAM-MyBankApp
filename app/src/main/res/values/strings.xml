@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyBank</string>
+    <string name="identifica_t">Identifica\'t</string>
+    <string name="hola_inicia_la_teva_sessi">Hola, inicia la teva sessió</string>
+    <string name="selecciona_el_teu_document">Seleciona el teu document</string>
+    <string name="dni_o_targeta_de_resid_ncia">DNI o targeta de residència</string>
+    <string name="passaport">Passaport</string>
+    <string name="n_mero_de_document">Número de document</string>
+    <string name="data_de_naixement">Data de naixement</string>
+    <string name="dd_mm_aaaa">dd/mm/aaaa</string>
+    <string name="continuar">Continuar</string>
+    <string name="informaci_sobre_seguretat">Informació sobre seguretat</string>
+    <string name="pol_tica_de_privacitat">Política de privacitat</string>
+</resources>
