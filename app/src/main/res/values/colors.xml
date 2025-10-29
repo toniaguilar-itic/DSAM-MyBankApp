@@ -7,6 +7,7 @@
     <color name="primary_variant">#E66E23</color>
     <color name="secondary">#172B53</color>
     <color name="secondary_variant">#415785</color>
+    <color name="terciary">#C8C8C8</color>
 
     <color name="background">#FFFFFF</color>
     <color name="surface">#FFFFFF</color>
@@ -19,4 +20,7 @@
     <color name="on_surface">#e9e9e9</color>
     <color name="on_surface_variant">#a1a1a1</color>
     <color name="on_error">#FFFFFF</color>
+
+    <color name="blau_caixa">#039DCD</color>
+    <color name="daurat">#CCA965</color>
 </resources>

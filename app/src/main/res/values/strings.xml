@@ -16,4 +16,22 @@
     <string name="completa">Completa les posicions que falten de la teva clau de seguretat</string>
     <string name="no_recordo">No recordo la meva clau</string>
     <string name="enrera">Enrera</string>
+
+    <string name="ing_dia_a_dia">Dia a dia</string>
+    <string name="ing_inversion">Inversió i estalvis</string>
+    <string name="ing_hipotecas">Hipoteques i prèstecs</string>
+    <string name="ing_cn">Compte NÓMINA</string>
+    <string name="ing_gc">Despeses comuns</string>
+    <string name="ing_tc">Targeta crèdit</string>
+    <string name="ing_cb">CaixaBank</string>
+    <string name="ing_bn">Broker TARONJA</string>
+    <string name="ing_fn_20_80">Fons TARONJA 20/80</string>
+    <string name="ing_cnaranja">Coompte TARONJA</string>
+    <string name="ing_hn">Hipoteca TARONJA</string>
+    <string name="ing_disponible">Disponible</string>
+    <string name="ing_p60000">Prèstec de fins 60.000 €</string>
+    <string name="home">Inici</string>
+    <string name="transferencies">Transferències</string>
+    <string name="moneyup">Money up</string>
+    <string name="contractar">Contractar</string>
 </resources>
