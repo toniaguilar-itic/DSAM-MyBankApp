@@ -24,7 +24,7 @@
             app:cardCornerRadius="50dp">
 
             <androidx.cardview.widget.CardView
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 android:layout_width="96dp"
                 android:layout_height="96dp"
                 android:layout_margin="2dp"
@@ -40,10 +40,10 @@
                         android:id="@+id/ivAvatar"
                         android:layout_width="110dp"
                         android:layout_height="110dp"
-                        android:src="@drawable/ic_untitled"
+                        tools:src="@drawable/ic_untitled"
                         android:translationX="-8dp"
                         android:translationY="-8dp"
-                        android:contentDescription="La meva imatge d'avatar"/>
+                        android:contentDescription="@string/la_meva_imatge_d_avatar"/>
 
                 </androidx.cardview.widget.CardView>
             </androidx.cardview.widget.CardView>
@@ -60,7 +60,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="4dp"
-                android:text="Hola novament!"
+                android:text="@string/hola_novament"
                 android:textSize="16sp" />
 
             <TextView
@@ -68,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="4dp"
-                android:text="Juan Antonio Aguilar"
+                tools:text="Toni Aguilar"
                 android:textSize="18sp"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -110,7 +110,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
 
@@ -132,7 +132,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
 
@@ -154,7 +154,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
 
@@ -176,7 +176,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
 
@@ -198,7 +198,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
 
@@ -220,7 +220,7 @@
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:layout_margin="2dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/on_secondary"
                 app:cardCornerRadius="13dp" />
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -245,10 +245,10 @@
             app:layout_constraintBottom_toTopOf="@+id/btn6_container">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="76dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos1"
@@ -257,7 +257,7 @@
                     android:layout_gravity="center"
                     tools:text="1"
                     android:textColor="@color/secondary"
-                    android:textSize="20dp" />
+                    android:textSize="20sp" />
 
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
@@ -276,7 +276,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos2"
@@ -285,7 +285,7 @@
                     tools:text="2"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -303,7 +303,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos3"
@@ -312,7 +312,7 @@
                     tools:text="3"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -330,7 +330,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos4"
@@ -339,7 +339,7 @@
                     tools:text="4"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -357,7 +357,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos5"
@@ -366,7 +366,7 @@
                     tools:text="5"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -384,7 +384,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos6"
@@ -393,7 +393,7 @@
                     tools:text="6"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -411,7 +411,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos7"
@@ -420,7 +420,7 @@
                     tools:text="7"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -438,7 +438,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos8"
@@ -447,7 +447,7 @@
                     tools:text="8"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -465,7 +465,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos9"
@@ -474,7 +474,7 @@
                     tools:text="9"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
 
@@ -492,7 +492,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
-                android:backgroundTint="@color/white">
+                android:backgroundTint="@color/on_secondary">
 
                 <TextView
                     android:id="@+id/tvPos0"
@@ -501,7 +501,7 @@
                     tools:text="0"
                     android:textColor="@color/secondary"
                     android:layout_gravity="center"
-                    android:textSize="20dp"/>
+                    android:textSize="20sp"/>
             </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -518,10 +518,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=">"
-            android:layout_marginRight="16dp"
+            android:text="@string/major_que"
+            android:layout_marginEnd="16dp"
             android:textSize="25sp"
             android:textColor="@color/primary"
+            android:background="@color/on_primary"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
@@ -529,7 +530,7 @@
             android:text="@string/no_recordo"/>
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/MenInfo"
+        android:id="@+id/llMesInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -540,15 +541,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=">"
-            android:layout_marginRight="16dp"
+            android:text="@string/major_que"
+            android:layout_marginEnd="16dp"
             android:textSize="25sp"
             android:textColor="@color/primary"
+            android:background="@color/on_primary"
             android:textStyle="bold"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mes_info"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llMesInfo"
+        android:gravity="center_vertical" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menor_que"
+            android:layout_marginEnd="16dp"
+            android:textSize="25sp"
+            android:textColor="@color/primary"
+            android:background="@color/on_primary"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_s_c"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

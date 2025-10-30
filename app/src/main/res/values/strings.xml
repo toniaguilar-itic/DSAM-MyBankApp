@@ -34,4 +34,9 @@
     <string name="transferencies">Transferències</string>
     <string name="moneyup">Money up</string>
     <string name="contractar">Contractar</string>
+    <string name="la_meva_imatge_d_avatar">La meva imatge d\'avatar</string>
+    <string name="hola_novament">Hola novament!</string>
+    <string name="no_s_c">No sóc</string>
+    <string name="major_que"><![CDATA[>]]></string>
+    <string name="menor_que"><![CDATA[<]]></string>
 </resources>
