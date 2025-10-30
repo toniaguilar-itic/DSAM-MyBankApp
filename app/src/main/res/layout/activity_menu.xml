@@ -19,6 +19,7 @@
             android:id="@+id/iv_lupa"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:contentDescription="@string/buscar"
             android:src="@drawable/ic_lupa"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/iv_logo"
@@ -29,6 +30,7 @@
             android:id="@+id/iv_logo"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
+            android:contentDescription="@string/logotip_del_banc_ing"
             android:paddingTop="10dp"
             android:src="@drawable/ic_logo"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +42,7 @@
             android:id="@+id/iv_menu"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:contentDescription="@string/menu"
             android:src="@drawable/ic_burger_menu"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +79,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3.938,50 €"
+                tools:text="3.938,50 €"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +101,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -110,6 +113,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
+                        android:contentDescription="@string/cor_taronja"
                         android:src="@drawable/ic_heart"
                         app:tint="@color/white" />
                 </FrameLayout>
@@ -117,7 +121,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_cn"
                     android:textStyle="bold" />
@@ -125,23 +129,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_gc" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="3.019,25 €"
+                    tools:text="3.019,25 €"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="130dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/square_border"
                 android:orientation="vertical"
                 android:padding="5dp">
@@ -149,7 +153,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -162,8 +166,9 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="start"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
+                        android:contentDescription="@string/targeta_de_cr_dit"
                         android:rotation="-20"
                         android:src="@drawable/ic_credit_card" />
                 </FrameLayout>
@@ -171,7 +176,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_tc"
                     android:textStyle="bold" />
@@ -179,23 +184,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="*9009" />
+                    tools:text="*9009" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="345,00 €"
+                    tools:text="345,00 €"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="130dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/square_border"
                 android:orientation="vertical"
                 android:padding="5dp">
@@ -203,7 +208,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -218,7 +223,7 @@
                         android:layout_gravity="center"
 
                         android:gravity="center"
-                        android:text="CA"
+                        tools:text="CA"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
@@ -227,7 +232,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_cb"
                     android:textStyle="bold" />
@@ -235,16 +240,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="*0988" />
+                    tools:text="*0988" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="919,25 €"
+                    tools:text="919,25 €"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -272,7 +277,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="14.417,26 €"
+                tools:text="14.417,26 €"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -294,7 +299,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -306,6 +311,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
+                        android:contentDescription="@string/broker"
                         android:src="@drawable/ic_building"
                         app:tint="@color/white" />
                 </FrameLayout>
@@ -313,7 +319,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_bn"
                     android:textStyle="bold" />
@@ -321,23 +327,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="*9900" />
+                    tools:text="*9900" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="6.417,01 €"
+                    tools:text="6.417,01 €"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="130dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/square_border"
                 android:orientation="vertical"
                 android:padding="5dp">
@@ -346,7 +352,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -358,6 +364,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
+                        android:contentDescription="@string/fons_d_inversi"
                         android:src="@drawable/ic_bar"
                         app:tint="@color/white" />
                 </FrameLayout>
@@ -365,7 +372,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_fn_20_80"
                     android:textStyle="bold" />
@@ -373,23 +380,23 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="*5677" />
+                    tools:text="*5677" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="5.000,00 €"
+                    tools:text="5.000,00 €"
                     android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="130dp"
                 android:layout_height="150dp"
-                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
                 android:background="@drawable/square_border"
                 android:orientation="vertical"
                 android:padding="5dp">
@@ -397,7 +404,7 @@
                 <FrameLayout
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp">
 
                     <View
@@ -409,6 +416,7 @@
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_gravity="center"
+                        android:contentDescription="@string/compte_d_estalvis"
                         android:src="@drawable/ic_pig"
                         app:tint="@color/white" />
                 </FrameLayout>
@@ -416,7 +424,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:text="@string/ing_cnaranja"
                     android:textStyle="bold" />
@@ -424,16 +432,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="*9976" />
+                    tools:text="*9976" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
-                    android:text="3.000,21 €"
+                    tools:text="3.000,21 €"
                     android:textStyle="bold" />
             </LinearLayout>
         </LinearLayout>
@@ -461,7 +469,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="136.000,00 €"
+                tools:text="136.000,00 €"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -487,7 +495,7 @@
                     <FrameLayout
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp">
 
                         <View
@@ -499,6 +507,7 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
+                            android:contentDescription="@string/hipoteca"
                             android:src="@drawable/ic_building"
                             app:tint="@color/white" />
                     </FrameLayout>
@@ -506,7 +515,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/ing_hn"
                         android:textStyle="bold" />
@@ -514,16 +523,16 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:text="*1634" />
+                        tools:text="*1634" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
-                        android:text="136.000,00 €"
+                        tools:text="136.000,00 €"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -531,7 +540,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp">
+                android:layout_marginStart="5dp">
 
                 <LinearLayout
                     android:layout_width="130dp"
@@ -542,7 +551,7 @@
                     <FrameLayout
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp">
 
                         <View
@@ -560,21 +569,21 @@
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center"
-                            android:src="@drawable/ic_hand"
+                            android:contentDescription="@string/oportunitat"                          android:src="@drawable/ic_hand"
                             app:tint="@color/primary" />
                     </FrameLayout>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/ing_disponible" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="5dp"
                         android:text="@string/ing_p60000" />
                 </LinearLayout>
@@ -602,6 +611,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/inici"
                 android:src="@drawable/ic_inici"
                 app:tint="@color/primary" />
 
@@ -627,6 +637,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/transfer_ncies"
                 android:src="@drawable/ic_transferencies"
                 app:tint="@color/primary" />
 
@@ -651,6 +662,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/money_up"
                 android:src="@drawable/ic_moneyup"
                 app:tint="@color/primary" />
 
@@ -675,6 +687,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center"
+                android:contentDescription="@string/contractar"
                 android:src="@drawable/ic_contractar"
                 app:tint="@color/primary" />
 

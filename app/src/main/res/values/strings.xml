@@ -39,4 +39,17 @@
     <string name="no_s_c">No sóc</string>
     <string name="major_que"><![CDATA[>]]></string>
     <string name="menor_que"><![CDATA[<]]></string>
+    <string name="cor_taronja">Cor taronja</string>
+    <string name="targeta_de_cr_dit">Targeta de crèdit</string>
+    <string name="broker">Broker</string>
+    <string name="fons_d_inversi">Fons d\'inversió</string>
+    <string name="compte_d_estalvis">Compte d\'estalvis</string>
+    <string name="hipoteca">Hipoteca</string>
+    <string name="oportunitat">Oportunitat</string>
+    <string name="inici">Inici</string>
+    <string name="transfer_ncies">Transferències</string>
+    <string name="money_up">Money up</string>
+    <string name="logotip_del_banc_ing">Logotip del Banc ING</string>
+    <string name="buscar">Buscar</string>
+    <string name="menu">Menú</string>
 </resources>
