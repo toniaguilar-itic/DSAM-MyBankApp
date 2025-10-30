@@ -117,11 +117,13 @@
         <EditText
             android:id="@+id/etDocument"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginHorizontal="10dp"
+            android:autofillHints="username"
             android:hint="@string/n_mero_de_document"
-            android:inputType="text"
-            />
+            android:textColor="@color/secondary"
+            android:background="@color/on_secondary"
+            android:inputType="text" />
     </androidx.cardview.widget.CardView>
 
     <TextView
@@ -162,9 +164,12 @@
         <EditText
             android:id="@+id/etDataNaixement"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:layout_marginHorizontal="10dp"
+            android:autofillHints="date"
             android:hint="@string/data_de_naixement"
+            android:textColor="@color/secondary"
+            android:background="@color/on_secondary"
             android:inputType="text"/>
     </androidx.cardview.widget.CardView>
 
