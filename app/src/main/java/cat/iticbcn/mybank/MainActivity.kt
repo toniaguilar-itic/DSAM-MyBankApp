@@ -88,6 +88,10 @@ class MainActivity : AppCompatActivity() {
         TODO("Not yet implemented")
     }
 
+    private fun validarData() {
+        TODO("Not yet implemented")
+    }
+
     /**
      * Valida si un DNI o NIE és vàlid.
      * @param valor El DNI o NIE a validar.
