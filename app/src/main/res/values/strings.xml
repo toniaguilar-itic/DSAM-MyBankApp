@@ -52,4 +52,19 @@
     <string name="logotip_del_banc_ing">Logotip del Banc ING</string>
     <string name="buscar">Buscar</string>
     <string name="menu">Menú</string>
+
+    <string name="error_dni">La has cagat</string>
+
+    <string name="ing_noia_mirant_pantalla">Noia mirant la pantalla del mÃ²bil</string>
+    <string name="ing_security_info_p1">Tens dubtes sobre l\'autenticitat dÂ´un missatge dÂ´ING? Escriu-nos a seguridad.internet@ing.es o truca\'ns al 91 206 66 66 i t\'ajudarem a sortir de dubtes.</string>
+    <string name="ing_security_info_p2">Cada cop que accedeixes a la nostra web www.ing.es utilitzant la teva clau de seguretat, la teva informaciÃ³ s\'envia a travÃ©s del nostre Servidor de Tecnologia Segura. Aquest servidor et garanteix que les comunicacions es realitzen de forma xifrada i ha estat certificat per Digicert, entitat externa de mÃ xim prestigi a nivell mundial en provisiÃ³ d\'infraestructures de clau pÃºblica a l\'emissiÃ³ de certificats.</string>
+    <string name="ing_security_info_p3">Per evitar el robatori i la suplantaciÃ³ d\'identitat o phising, mitjanÃ§ant el qual terceres persones es fan passar per empleats, o simulen la identitat del banc, utilitzant de forma fraudulenta el correu electrÃ²nic per solÂ·licitar-te la clau d\'accÃ©s, et recomanem seguir els consells segÃ¼ents:</string>
+    <string name="ing_security_info_li_1">Recordeu que ING mai us demanarÃ , ni per telÃ¨fon ni per Internet, la vostra clau d\'accÃ©s al complet, tan sols posicions aleatÃ²ries.</string>
+    <string name="ing_security_info_li_2">ING mai t\'enviarÃ  correus electrÃ²nics amb enllaÃ§os a www.ing.es. Desconfia de trucades o correus electrÃ²nics comunicant-te premis o regals. El mÃ©s aconsellable Ã©s teclejar sempre l\'adreÃ§a www.ing.es directament al vostre navegador d\'Internet.</string>
+    <string name="ing_security_info_li_3">El teu usuari, contrasenya, etc. sÃ³n dades de carÃ cter personal i estrictament confidencials, que nomÃ©s s\'han de fer servir per accedir als serveis propis d\'ING. La cessiÃ³ de dades confidencials a terceres persones Ã©s responsabilitat del propietari dels mateixos.--></string>
+    <string name="ing_security_info_p4">La clau de seguretat estÃ  composta pels 6 dÃ­gits que tu mateix tries en fer-te client d\'ING. Pots modificar-la sempre que vulguis.\nSi tens un Compte NÃ’MINA o Compte NoCompte, pots validar totes les operacions per mitjÃ  d\'elements de seguretat identificatius d\'ING.\nRecorda que ING mai et solÂ·licitarÃ , ni per correu electrÃ²nic ni per telÃ¨fon, que facilitis totes les posicions de la teva Clau de Seguretat.</string>
+    <string name="ing_sebre_img_1">AquÃ­,\nsenzillament,\npots</string>
+    <string name="ing_sobre_img_2">Benvingut al lloc on\nÃ©s possible fer-ho tot\ni fer-ho facilment</string>
+    <string name="ing_close">Tancar</string>
+    <string name="ing_logo">logotip</string>
 </resources>

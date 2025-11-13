@@ -1,9 +1,12 @@
 package cat.iticbcn.mybank
 
 import android.app.AlertDialog
+import android.app.Dialog
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.RadioGroup
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,6 +21,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnContinuar : MaterialButton
     private lateinit var ivBack: ImageView
     private lateinit var etDocument: EditText
+
+    private lateinit var rgDocument: RadioGroup
+    private lateinit var tvInfoSeguretat: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +43,8 @@ class MainActivity : AppCompatActivity() {
         ivBack = findViewById<ImageView>(R.id.ivBack)
         btnContinuar = findViewById<MaterialButton>(R.id.btnContinuar)
         etDocument = findViewById<EditText>(R.id.etDocument)
+        rgDocument = findViewById<RadioGroup>(R.id.rgDocument)
+        tvInfoSeguretat = findViewById<TextView>(R.id.tvInfoSeguretat)
     }
 
     private fun initListeners() {
@@ -52,10 +60,34 @@ class MainActivity : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun afterTextChanged(s: android.text.Editable?) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                if (etDocument.length() == 9) {
-                    validarDNI()}
+                if (rgDocument.checkedRadioButtonId==R.id.rbDNI && etDocument.length() == 9) {
+                    if (isValidDniNie(etDocument.text.toString())) {
+                        etDocument.error = null
+                    } else {
+                        etDocument.error = getString(R.string.error_dni)
+                    }
+                }
             }
         })
+
+        rgDocument.setOnCheckedChangeListener { group, checkedId ->
+            if (checkedId==R.id.rbDNI && etDocument.length() == 9) {
+                if (isValidDniNie(etDocument.text.toString())) {
+                    etDocument.error = null
+                } else {
+                    etDocument.error = getString(R.string.error_dni)
+                }
+            } else {
+                etDocument.error = null
+            }
+        }
+
+        tvInfoSeguretat.setOnClickListener {
+            val info_seg = Dialog(this)
+            info_seg.setContentView(R.layout.dialog_info_seguretat)
+            info_seg.show()
+
+        }
     }
 
     private fun goToLoginActivity() {
