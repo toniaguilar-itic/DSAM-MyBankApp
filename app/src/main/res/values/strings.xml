@@ -54,7 +54,15 @@
     <string name="menu">Menú</string>
 
     <string name="error_dni">La has cagat</string>
+    <string name="required_field">És un camp obligatori. Has d\'informar una dada</string>
+    <string name="invalid_long_dni_nie">"Un DNI/NIE ha de tenir 9 caràcters de longitud"</string>
+    <string name="invalid_mandatory_dni_nie">La dada és obligatoria</string>
+    <string name="invalid_dni_nie">"El DNI/NIE introduït no és vàlid"</string>
+    <string name="invalid_birth_date">Data de naixement no vàlida</string>
+    <string name="ing_close">Tancar</string>
+    <string name="ing_logo">logotip</string>
 
+    <!-- Política de seguretat -->
     <string name="ing_noia_mirant_pantalla">Noia mirant la pantalla del mÃ²bil</string>
     <string name="ing_security_info_p1">Tens dubtes sobre l\'autenticitat dÂ´un missatge dÂ´ING? Escriu-nos a seguridad.internet@ing.es o truca\'ns al 91 206 66 66 i t\'ajudarem a sortir de dubtes.</string>
     <string name="ing_security_info_p2">Cada cop que accedeixes a la nostra web www.ing.es utilitzant la teva clau de seguretat, la teva informaciÃ³ s\'envia a travÃ©s del nostre Servidor de Tecnologia Segura. Aquest servidor et garanteix que les comunicacions es realitzen de forma xifrada i ha estat certificat per Digicert, entitat externa de mÃ xim prestigi a nivell mundial en provisiÃ³ d\'infraestructures de clau pÃºblica a l\'emissiÃ³ de certificats.</string>
@@ -65,6 +73,24 @@
     <string name="ing_security_info_p4">La clau de seguretat estÃ  composta pels 6 dÃ­gits que tu mateix tries en fer-te client d\'ING. Pots modificar-la sempre que vulguis.\nSi tens un Compte NÃ’MINA o Compte NoCompte, pots validar totes les operacions per mitjÃ  d\'elements de seguretat identificatius d\'ING.\nRecorda que ING mai et solÂ·licitarÃ , ni per correu electrÃ²nic ni per telÃ¨fon, que facilitis totes les posicions de la teva Clau de Seguretat.</string>
     <string name="ing_sebre_img_1">AquÃ­,\nsenzillament,\npots</string>
     <string name="ing_sobre_img_2">Benvingut al lloc on\nÃ©s possible fer-ho tot\ni fer-ho facilment</string>
-    <string name="ing_close">Tancar</string>
-    <string name="ing_logo">logotip</string>
+
+    <!-- Privacitat -->
+    <string name="politica_privacitat_titol1">Política de Privadesa per a clients i potencials clients d\'ING</string>
+    <string name="politica_privacitat_text2">Us expliquem d\'una manera senzilla i transparent el tractament que fem de les vostres dades personals.</string>
+    <string name="politica_privacitat_card1_text">Quines dades personals tractem?</string>
+    <string name="politica_privacitat_card1_subtext">Només les dades necessàries per complir amb les finalitats previstes.</string>
+    <string name="politica_privacitat_card2_text">Per què fem servir les teves dades?</string>
+    <string name="politica_privacitat_card2_subtext">Només per a les finalitats que us expliquem en aquesta secció.</string>
+    <string name="politica_privacitat_card3_text">Amb qui i per què compartim les teves dades?</string>
+    <string name="politica_privacitat_card3_subtext">Compartim dades amb altres entitats del Grup ING i amb tercers. T\'expliquem per què.</string>
+    <string name="politica_privacitat_card4_text">Quins són els teus drets i com exercir-los?</string>
+    <string name="politica_privacitat_card4_subtext">Quins són els teus drets i com exercir-los?</string>
+    <string name="politica_privacitat_card5_text">Quant de temps conservem les teves dades?</string>
+    <string name="politica_privacitat_card5_subtext">Només el temps necessari per complir amb la finalitat per a què els recollim o per complir amb la llei.</string>
+    <string name="politica_privacitat_card6_text">Com protegim les teves dades personals?</string>
+    <string name="politica_privacitat_card6_subtext">Apliquem les mesures necessàries per garantir que les teves dades estiguin segures</string>
+    <string name="saber_mes">Saber més</string>
+
+    <string name="calendari">Calendari</string>
+
 </resources>

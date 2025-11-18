@@ -2,6 +2,7 @@ package cat.iticbcn.mybank
 
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.Context
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageView
@@ -11,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.widget.addTextChangedListener
 import com.google.android.material.button.MaterialButton
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -21,9 +23,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnContinuar : MaterialButton
     private lateinit var ivBack: ImageView
     private lateinit var etDocument: EditText
+    private lateinit var etData: EditText
 
     private lateinit var rgDocument: RadioGroup
     private lateinit var tvInfoSeguretat: TextView
+    private lateinit var tvInfoPrivacitat: TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,8 +47,10 @@ class MainActivity : AppCompatActivity() {
         ivBack = findViewById<ImageView>(R.id.ivBack)
         btnContinuar = findViewById<MaterialButton>(R.id.btnContinuar)
         etDocument = findViewById<EditText>(R.id.etDocument)
+        etData = findViewById<EditText>(R.id.etDataNaixement)
         rgDocument = findViewById<RadioGroup>(R.id.rgDocument)
         tvInfoSeguretat = findViewById<TextView>(R.id.tvInfoSeguretat)
+        tvInfoPrivacitat = findViewById<TextView>(R.id.tvInfoPrivacitat)
     }
 
     private fun initListeners() {
@@ -53,7 +59,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnContinuar.setOnClickListener {
-            goToLoginActivity()
+            if (isValidForm()) {
+                goToLoginActivity()
+            }
         }
 
         etDocument.addTextChangedListener(object : android.text.TextWatcher {
@@ -69,6 +77,17 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+
+        etData.addTextChangedListener { text ->
+            val dataInput = text.toString()
+            if (dataInput.length == 10) {
+                if (!isValidBirthDate(dataInput)) {
+                    etData.error = getString(R.string.invalid_birth_date)
+                } else {
+                    etData.error = null
+                }
+            }
+        }
 
         rgDocument.setOnCheckedChangeListener { group, checkedId ->
             if (checkedId==R.id.rbDNI && etDocument.length() == 9) {
@@ -87,12 +106,63 @@ class MainActivity : AppCompatActivity() {
             info_seg.setContentView(R.layout.dialog_info_seguretat)
             info_seg.show()
 
+            val btnTancar = info_seg.findViewById<MaterialButton>(R.id.btnTancar)
+            btnTancar.setOnClickListener {
+                info_seg.dismiss()
+            }
+
+        }
+
+        tvInfoPrivacitat.setOnClickListener {
+            val info_priv = Dialog(this)
+            info_priv.setContentView(R.layout.dialog_politica_privacitat)
+            info_priv.show()
+
+            val btnTancar = info_priv.findViewById<MaterialButton>(R.id.btnTancar)
+            btnTancar.setOnClickListener {
+                info_priv.dismiss()
+            }
         }
     }
 
     private fun goToLoginActivity() {
         val intent = android.content.Intent(this, LoginActivity::class.java)
         startActivity(intent)
+    }
+
+    private fun isValidForm(): Boolean {
+        var isValid = true
+
+        val documentType = when (rgDocument.checkedRadioButtonId) {
+            R.id.rbDNI -> "DNI"
+            R.id.rbPassport -> "Passport"
+            else -> ""
+        }
+
+        val documentNumber = etDocument.text.toString()
+        val birthDate = etData.text.toString()
+
+        if (documentNumber.isEmpty()) {
+            etDocument.error = getString(R.string.required_field)
+            isValid = false
+        } else {
+            if (documentType == "DNI" && !isValidDniNie(documentNumber)) {
+                etDocument.error = getString(R.string.invalid_dni_nie)
+                isValid = false
+            }
+        }
+
+        if (birthDate.isEmpty()) {
+            etData.error = getString(R.string.required_field)
+            isValid = false
+        } else {
+            if (!isValidBirthDate(birthDate)) {
+                etData.error = getString(R.string.invalid_birth_date)
+                isValid = false
+            }
+        }
+
+        return isValid
     }
 
     /**

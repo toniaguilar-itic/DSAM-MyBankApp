@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvCard1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/secondary" >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            app:cardCornerRadius="8dp"
+            android:backgroundTint="@color/on_secondary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:id="@+id/tvTitol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/politica_privacitat_card1_text"
+                    android:textColor="@color/secondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvDescripcio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    tools:text="@string/politica_privacitat_card1_subtext"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</androidx.cardview.widget.CardView>
