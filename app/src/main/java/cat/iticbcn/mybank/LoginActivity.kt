@@ -18,12 +18,16 @@ import com.google.android.material.button.MaterialButton
 
 class LoginActivity : AppCompatActivity() {
 
+    private lateinit var password:String
     private lateinit var llBack : LinearLayout
     private lateinit var tvNoSoc : TextView
     private lateinit var llNoRecordo: LinearLayout
     private lateinit var llMesInfo: LinearLayout
 
     private lateinit var ivAvatar: ImageView
+
+    private lateinit var tvUserName: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,13 +55,29 @@ class LoginActivity : AppCompatActivity() {
         llBack = findViewById<LinearLayout>(R.id.llBack)
         llNoRecordo = findViewById<LinearLayout>(R.id.llNoRecordo)
         llMesInfo = findViewById<LinearLayout>(R.id.llMesInfo)
+        tvUserName = findViewById<TextView>(R.id.tvUserName)
+        ivAvatar = findViewById<ImageView>(R.id.ivAvatar)
+
+        var sharedPrefs = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        tvUserName.text = sharedPrefs.getString("USER_NAME","Usuari")
+
+        val imageName = sharedPrefs.getString("USER_AVATAR", "ic_default_avatar")
+        val imageResId = resources.getIdentifier(imageName, "drawable", packageName)
+        ivAvatar.setImageResource(imageResId)
+
+        password = "987123"
 
     }
     private fun initListeners() {
         llBack.setOnClickListener{
-            //val intent = android.content.Intent(this, MainActivity::class.java)
-            //startActivity(intent)
-            finish()
+            val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+            with(sharedPref.edit()) {
+                clear()
+                apply()
+            }
+
+            val intent = android.content.Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         llNoRecordo.setOnClickListener {

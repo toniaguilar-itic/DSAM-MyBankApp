@@ -1,9 +1,12 @@
 package cat.iticbcn.mybank
 
 import android.app.AlertDialog
+import android.app.DatePickerDialog
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
+import android.view.View
+import android.widget.CalendarView
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RadioGroup
@@ -28,6 +31,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rgDocument: RadioGroup
     private lateinit var tvInfoSeguretat: TextView
     private lateinit var tvInfoPrivacitat: TextView
+    private lateinit var cvCalendar: CalendarView
+
+    private lateinit var ivCalendar: ImageView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,10 +45,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        verifyLoggedIn()
         initComponents()
-        // initUI()
+        initUI()
         initListeners()
     }
+
+    private fun verifyLoggedIn() {
+        val sharedPref = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val loggedIn = sharedPref.getBoolean("LOGGED_IN", false)
+
+        if (loggedIn) {
+            goToLoginActivity()
+            finish()  // Tanca aquesta activitat per evitar tornar enrere
+        }
+    }
+
     private fun initComponents() {
         ivBack = findViewById<ImageView>(R.id.ivBack)
         btnContinuar = findViewById<MaterialButton>(R.id.btnContinuar)
@@ -51,8 +70,13 @@ class MainActivity : AppCompatActivity() {
         rgDocument = findViewById<RadioGroup>(R.id.rgDocument)
         tvInfoSeguretat = findViewById<TextView>(R.id.tvInfoSeguretat)
         tvInfoPrivacitat = findViewById<TextView>(R.id.tvInfoPrivacitat)
+        cvCalendar = findViewById<CalendarView>(R.id.cvCalendar)
+        ivCalendar = findViewById<ImageView>(R.id.ivCalendar)
     }
 
+    private fun initUI() {
+        cvCalendar.visibility=View.GONE
+    }
     private fun initListeners() {
         ivBack.setOnClickListener {
             terminarAplicacio()
@@ -60,7 +84,17 @@ class MainActivity : AppCompatActivity() {
 
         btnContinuar.setOnClickListener {
             if (isValidForm()) {
+                // Connetar BBDD
+                // Rebre imatge, psw
+                val sharedPrefs = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+                with (sharedPrefs.edit()) {
+                    putString("USER_NAME" , "Toni Aguilar")
+                    putString("USER_AVATAR","ic_untitled")
+                    putBoolean("LOGGED_IN", true)
+                    apply()   // o commit()
+                }
                 goToLoginActivity()
+                finish()
             }
         }
 
@@ -123,6 +157,50 @@ class MainActivity : AppCompatActivity() {
                 info_priv.dismiss()
             }
         }
+
+        ivCalendar.setOnClickListener {
+            /*
+            val transition = AutoTransition()
+            transition.duration = 300
+            TransitionManager.beginDelayedTransition(cvDataDeNaixement, transition)
+
+            cvCalendar.visibility = if (cvCalendar.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+
+             */
+
+            //Segona opció: Fer-ho amb el DatePickerDialog
+
+            val inicial = Calendar.getInstance().apply {
+                set(2000, Calendar.JANUARY, 1)
+            }
+
+            val any = inicial.get(Calendar.YEAR)
+            val mes = inicial.get(Calendar.MONTH)
+            val dia = inicial.get(Calendar.DAY_OF_MONTH)
+
+            val datePicker = DatePickerDialog(
+                this, // o requireContext() si estàs en un Fragment
+                { _, anySeleccionat, mesSeleccionat, diaSeleccionat ->
+                    val dataText = String.format(
+                        "%02d/%02d/%d",
+                        diaSeleccionat,
+                        mesSeleccionat + 1,
+                        anySeleccionat
+                    )
+                    etData.setText(dataText)
+                },
+                any,
+                mes,
+                dia
+            )
+
+            datePicker.datePicker.minDate =
+                Calendar.getInstance().apply { set(1900, Calendar.JANUARY, 1) }.timeInMillis
+            datePicker.datePicker.maxDate =
+                System.currentTimeMillis() // opcional: no permet dates futures
+            datePicker.show()
+        }
+
     }
 
     private fun goToLoginActivity() {

@@ -54,6 +54,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvSebreImg1" />
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivNoia"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
     <TextView
         android:id="@+id/tvSecurityInfoP1"
         android:layout_width="0dp"
@@ -67,7 +78,7 @@
         android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ivNoia" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvSecurityInfoP2"
@@ -168,6 +179,8 @@
         app:layout_constraintStart_toEndOf="@+id/ivBullet3"
         app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi2" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
     <TextView
         android:id="@+id/tvSecurityInfoP4"
         android:layout_width="0dp"
@@ -183,7 +196,7 @@
         app:layout_constraintBottom_toTopOf="@id/btnTancar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSecurityInfoLi3" />
+         />
 
     <Button
         android:id="@+id/btnTancar"
@@ -195,5 +208,5 @@
         android:textColor="@color/on_primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvSecurityInfoP4" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
