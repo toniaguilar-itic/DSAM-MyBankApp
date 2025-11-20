@@ -5,6 +5,8 @@ import android.app.DatePickerDialog
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
+import android.transition.AutoTransition
+import android.transition.TransitionManager
 import android.view.View
 import android.widget.CalendarView
 import android.widget.EditText
@@ -159,14 +161,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         ivCalendar.setOnClickListener {
-            /*
+/*
             val transition = AutoTransition()
             transition.duration = 300
-            TransitionManager.beginDelayedTransition(cvDataDeNaixement, transition)
+            TransitionManager.beginDelayedTransition(cvCalendar, transition)
 
             cvCalendar.visibility = if (cvCalendar.visibility == View.VISIBLE) View.GONE else View.VISIBLE
 
-             */
+*/
 
             //Segona opció: Fer-ho amb el DatePickerDialog
 
@@ -199,6 +201,25 @@ class MainActivity : AppCompatActivity() {
             datePicker.datePicker.maxDate =
                 System.currentTimeMillis() // opcional: no permet dates futures
             datePicker.show()
+
+
+        }
+
+        // on below line we are adding set on
+        // date change listener for calendar view.
+        cvCalendar.setOnDateChangeListener { view, year, month, dayOfMonth ->
+            // In this Listener we are getting values
+            // such as year, month and day of month
+            // on below line we are creating a variable
+            // in which we are adding all the variables in it.
+            val Date = (String.format("%02d",dayOfMonth) + "/"
+                    + String.format("%02d",month) + "/" + year)
+
+            // set this date in TextView for Display
+            etData.setText(Date)
+
+            //Close view
+            view.visibility = View.GONE
         }
 
     }

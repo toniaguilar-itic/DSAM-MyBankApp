@@ -57,130 +57,131 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivNoia"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivNoia">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-    <TextView
-        android:id="@+id/tvSecurityInfoP1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_p1"
-        android:textColor="@color/secondary"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvSecurityInfoP2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_p2"
-        android:textColor="@color/secondary"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP1" />
+            <TextView
+                android:id="@+id/tvSecurityInfoP1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_p1"
+                android:textColor="@color/secondary"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSecurityInfoP3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_p3"
-        android:textColor="@color/secondary"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP2" />
+            <TextView
+                android:id="@+id/tvSecurityInfoP2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_p2"
+                android:textColor="@color/secondary"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP1" />
 
-    <ImageView
-        android:id="@+id/ivBullet1"
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:layout_margin="12dp"
-        android:background="@drawable/circle_orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP3" />
+            <TextView
+                android:id="@+id/tvSecurityInfoP3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_p3"
+                android:textColor="@color/secondary"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP2" />
 
-    <TextView
-        android:id="@+id/tvSecurityInfoLi1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_li_1"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivBullet1"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP3" />
+            <ImageView
+                android:id="@+id/ivBullet1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/circle_orange"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP3" />
 
-    <ImageView
-        android:id="@+id/ivBullet2"
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:layout_margin="12dp"
-        android:background="@drawable/circle_orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi1" />
+            <TextView
+                android:id="@+id/tvSecurityInfoLi1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_li_1"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBullet1"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoP3" />
 
-    <TextView
-        android:id="@+id/tvSecurityInfoLi2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_li_2"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivBullet2"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi1" />
+            <ImageView
+                android:id="@+id/ivBullet2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/circle_orange"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi1" />
 
-    <ImageView
-        android:id="@+id/ivBullet3"
-        android:layout_width="8dp"
-        android:layout_height="8dp"
-        android:layout_margin="12dp"
-        android:background="@drawable/circle_orange"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi2" />
+            <TextView
+                android:id="@+id/tvSecurityInfoLi2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_li_2"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBullet2"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi1" />
 
-    <TextView
-        android:id="@+id/tvSecurityInfoLi3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:justificationMode="inter_word"
-        android:text="@string/ing_security_info_li_3"
-        android:textSize="11sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/ivBullet3"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi2" />
+            <ImageView
+                android:id="@+id/ivBullet3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/circle_orange"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi2" />
+
+            <TextView
+                android:id="@+id/tvSecurityInfoLi3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:justificationMode="inter_word"
+                android:text="@string/ing_security_info_li_3"
+                android:textSize="11sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ivBullet3"
+                app:layout_constraintTop_toBottomOf="@+id/tvSecurityInfoLi2" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
     <TextView
         android:id="@+id/tvSecurityInfoP4"
         android:layout_width="0dp"
@@ -195,8 +196,7 @@
         android:textSize="11sp"
         app:layout_constraintBottom_toTopOf="@id/btnTancar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-         />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnTancar"
@@ -206,7 +206,7 @@
         android:backgroundTint="@color/primary"
         android:text="@string/ing_close"
         android:textColor="@color/on_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
